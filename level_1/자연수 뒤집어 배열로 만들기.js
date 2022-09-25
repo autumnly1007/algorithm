@@ -3,7 +3,7 @@ function solution(n) {
     .toString()
     .split('')
     .reverse()
-    .map((num) => num);
+    .map((num) => parseInt(num));
   return answer;
 }
 
