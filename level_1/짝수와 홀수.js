@@ -1,5 +1,5 @@
 function solution(num) {
-  var answer = '';
+  let answer = '';
 
   if (num % 2 === 0) {
     answer = 'Even';
