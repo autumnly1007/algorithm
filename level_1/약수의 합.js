@@ -1,5 +1,5 @@
 function solution(n) {
-  var answer = 0;
+  let answer = 0;
   let i = 0;
 
   for (i = 1; i <= n; i++) {
