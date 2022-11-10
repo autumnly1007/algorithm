@@ -4,6 +4,7 @@ function solution(s) {
 
   for (let x of s) {
     if (x === ')') {
+      // stack.pop() 의 반환값이 ( 일 경우 괄호세트가 제거된 상태임
       while (stack.pop() != '(');
     } else {
       stack.push(x);
