@@ -4,7 +4,6 @@ function solution(n, m) {
 
   function DFS(L) {
     if (L === m) {
-      console.log(...temp);
       answer.push(temp.slice());
     } else {
       for (let i = 1; i <= n; i++) {
