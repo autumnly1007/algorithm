@@ -1,13 +1,12 @@
 function solution(ingredient) {
   let answer = 0;
-  const hamberger = '1231';
   const stack = [];
 
-  ingredient.forEach((item, idx) => {
+  ingredient.forEach((item) => {
     stack.push(item);
 
     if (stack.length >= 4) {
-      if (stack.slice(-4).join('') === hamberger) {
+      if (stack.slice(-4).join('') === '1231') {
         answer++;
         stack.splice(-4, 4);
       }
