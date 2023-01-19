@@ -3,9 +3,9 @@ function solution(s) {
 
   while (s !== '1') {
     const zeroCnt = s.match(/0/g) ? s.match(/0/g).length : 0;
-    const length = s.length - zeroCnt;
     answer[1] += zeroCnt;
 
+    const length = s.length - zeroCnt;
     s = length.toString(2);
     answer[0]++;
   }
