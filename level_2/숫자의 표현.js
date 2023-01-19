@@ -3,13 +3,11 @@ function solution(n) {
   let start = 1;
 
   while (start <= n) {
-    let tmp = 0;
+    let sum = 0;
 
-    for (let i = start; tmp <= n; i++) {
-      tmp += i;
-      if (tmp === n) {
-        answer++;
-      }
+    for (let i = start; sum <= n; i++) {
+      sum += i;
+      if (sum === n) answer++;
     }
     start++;
   }
