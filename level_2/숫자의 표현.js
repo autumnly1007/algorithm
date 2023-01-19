@@ -1,15 +1,19 @@
 function solution(n) {
-  let count = 0;
+  let answer = 0;
+  let start = 1;
 
-  for (let i = 1; i < n / 2 + 1; i++) {
-    const sum = (i * (i + 1)) / 2;
-    const sub = n - sum;
-    if (sub < 0) break;
-    if (sub % i === 0) {
-      count++;
+  while (start <= n) {
+    let tmp = 0;
+
+    for (let i = start; tmp <= n; i++) {
+      tmp += i;
+      if (tmp === n) {
+        answer++;
+      }
     }
+    start++;
   }
-  return count;
+  return answer;
 }
 
 console.log(solution(15)); // 4
